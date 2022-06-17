@@ -1,0 +1,75 @@
+.containerLogin {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginLeft {
+    background-image: url("../../Assets/images/backgroundLeftLogin.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 40%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.loginLeftContent {
+    width: 460px;
+    height: 93px;
+
+    color: #034a2a;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+
+    margin-top: 8rem;
+}
+
+.loginRight {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginRight span {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.loginRight a {
+    color: #da0175;
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.loginForm label {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}

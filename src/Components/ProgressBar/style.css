@@ -1,0 +1,52 @@
+.Mui-active span,
+span.MuiStepLabel-labelContainer.css-16ubnlw-MuiStepLabel-labelContainer {
+  color: #0e8750;
+}
+
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiStepIcon-root.Mui-active.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root,
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiStepIcon-root.Mui-completed.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root,
+span.MuiStepLabel-label.Mui-active.css-qivjh0-MuiStepLabel-label {
+  color: #0e8750;
+  font-size: 2rem;
+}
+
+span.MuiStepLabel-label.Mui-active.css-qivj0-MuiStepLabel-label {
+  color: #0e8750;
+  font-size: 1.6rem;
+}
+
+p.MuiTypography-root.MuiTypography-body1.css-ahj2mt-MuiTypography-root {
+  font-size: 1.6rem;
+}
+
+.containerContent {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentLeft {
+  width: 30%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f0f0f5;
+}
+
+.contentRight {
+  width: 70%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

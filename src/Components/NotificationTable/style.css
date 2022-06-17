@@ -1,0 +1,12 @@
+.containerNotification {
+    height: 2rem;
+    width: 5.2rem;
+    border-radius: 8px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+}

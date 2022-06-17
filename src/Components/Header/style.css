@@ -1,0 +1,117 @@
+header {
+  height: 11.2rem;
+  width: 100%;
+  padding: 0 3.2rem;
+}
+
+.header-border {
+  border-bottom: solid 2px #acd9c5;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 11rem 2.4rem 5rem;
+}
+
+.header__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #343447;
+}
+
+.header__side-right {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__side-right h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #0e8750;
+}
+
+.header__circle {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  background-color: #dedee9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__side-right > h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #0e8750;
+}
+
+.optionsMenuIcon:hover {
+  cursor: pointer;
+}
+
+.options-container {
+  height: 51px;
+  width: 92px;
+  border-radius: 8px;
+  padding: 0 1.5rem;
+  position: absolute;
+  z-index: 2;
+  bottom: -5rem;
+  right: -6rem;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 11px;
+  letter-spacing: 0px;
+  color: #747488;
+
+  cursor: pointer;
+}
+
+.options__triangle {
+  height: 0.8rem;
+  width: 1.6rem;
+  left: 0;
+  top: -1rem;
+  position: absolute;
+
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #ffffff;
+}
+
+.css-2s90m6-MuiAvatar-root {
+  color: #0e8750;
+}

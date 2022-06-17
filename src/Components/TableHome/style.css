@@ -1,0 +1,29 @@
+div.MuiTableContainer-root {
+  box-shadow: none;
+}
+
+th.MuiTableCell-head {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  letter-spacing: 0.005em;
+  text-align: left;
+  color: #3f3f55;
+  border-top: 1px solid rgba(224, 224, 224, 1);
+}
+
+td.MuiTableCell-body {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  color: #6e6e85;
+}
+
+th.MuiTableCell-root,
+td.MuiTableCell-root {
+  padding: 0.6rem 1.4rem;
+}

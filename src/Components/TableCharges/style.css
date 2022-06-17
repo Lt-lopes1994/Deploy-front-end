@@ -1,0 +1,107 @@
+div.MuiPaper-root {
+    box-shadow: none;
+}
+
+th.MuiTableCell-head {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.6;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: #3F3F55;
+    border-top: none;
+}
+
+tr th.MuiTableCell-head {
+    border-top: none;
+}
+
+th.MuiTableCell-body {
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: #747488;
+    padding-left: 2.3rem;
+}
+
+td.MuiTableCell-body {
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: #747488;
+    padding-left: 2.3rem;
+}
+
+.table__status {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.9rem;
+
+    height: 1.9rem;
+    width: 6.7rem;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table__statusDefaulter {
+    background-color: #FFEFEF;
+    color: #971D1D;
+}
+
+.table__statusNonDefaulter {
+    background-color: #EEF6F6;
+    color: #1FA7AF;
+}
+
+.table__statusPendency {
+    background-color: #FCF6DC;
+    color: #C5A605;
+}
+
+.table__icon {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.1rem;
+    cursor: pointer;
+}
+
+.table__editClient {
+    height: 3.1rem;
+    width: 2.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #747488;
+}
+
+.table__deleteClient {
+    height: 3.1rem;
+    width: 2.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #AE1100;
+}
+
+.table__createCharge>img {
+    height: 2.4rem;
+    width: 2.4rem;
+}

@@ -1,0 +1,16 @@
+.buttonBase {
+  width: 16rem;
+  height: 3.3rem;
+  margin-top: 4.6rem;
+  margin-bottom: 1.9rem;
+
+  background: #da0175;
+  border-radius: 1rem;
+
+  border: none;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}

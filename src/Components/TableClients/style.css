@@ -1,0 +1,92 @@
+div.MuiPaper-root {
+    border-radius: 4px;
+}
+
+th.MuiTableCell-head {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: #3F3F55;
+
+}
+
+th.MuiTableCell-body {
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: #747488;
+    padding-left: 2.3rem;
+}
+
+td.MuiTableCell-body {
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: #747488;
+    padding-left: 2.3rem;
+}
+
+.table__statusDefaulter,
+.table__statusNonDefaulter {
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table__statusDefaulter {
+    height: 2.1rem;
+    width: 12rem;
+    background-color: #FFEFEF;
+
+    color: #971D1D;
+}
+
+.table__statusNonDefaulter {
+    height: 2.1rem;
+    width: 9.6rem;
+    background-color: #EEF6F6;
+
+    color: #1FA7AF;
+}
+
+.table__createCharge {
+    height: 3.5rem;
+    width: 3.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Nunito", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 11px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #DA0175;
+}
+
+.table__createCharge>img {
+    height: 2.4rem;
+    width: 2.4rem;
+}

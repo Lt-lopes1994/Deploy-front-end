@@ -1,0 +1,135 @@
+.page-container {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  background-color: #f8f8f9;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  min-height: 100vh;
+  width: calc(100% - 10.8rem);
+}
+
+.headerStage {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #3F3F55;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25.4rem;
+
+  position: absolute;
+  top: 8rem;
+  left: 17rem;
+}
+
+.color--green {
+  color: #0E8750;
+}
+
+.main-section {
+  width: calc(100% - 10.8rem);
+  padding: 0 10.8rem;
+}
+
+.main__header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.main__header>h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 34px;
+  color: #3F3F55;
+}
+
+.clientData-container {
+  height: 26.85rem;
+  width: 100%;
+  padding: 2.5rem 3rem 2.4rem 2.4rem;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clientData__header {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+  color: #3F3F55;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.buttonEditClient {
+  border: none;
+  height: 3.3rem;
+  width: 24.6rem;
+  border-radius: 10px;
+  padding: 0.4rem 6rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #0E8750;
+}
+
+.flex-align {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: #3F3F55;
+}
+
+.flex-align span {
+  font-weight: 400;
+}
+
+.clientCharges {
+  height: 35rem;
+}
+
+.buttonAddCharge {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+
+
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

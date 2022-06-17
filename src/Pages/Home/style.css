@@ -1,0 +1,28 @@
+.containerHome {
+  width: 100%;
+
+  min-height: 100vh;
+
+
+  background-color: #f8f8f9;
+  display: flex;
+}
+
+.containerHomeContent {
+  width: calc(100% - 10.8rem);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerHomeCards {
+  width: 118rem;
+  min-height: 100vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

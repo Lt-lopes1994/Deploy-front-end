@@ -1,0 +1,99 @@
+.containerRegister {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.redirectToLogin {
+  margin-left: 7rem;
+  margin-top: 2rem;
+
+  text-align: center;
+}
+
+.registerRight a {
+  color: #da0175;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: left;
+}
+
+.registerForm h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  margin-bottom: 3.2rem;
+}
+
+.registerInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.registerInput label {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
+  color: #344054;
+}
+
+.stepperFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+
+.horizontalLine {
+  width: 82px;
+  height: 6px;
+  left: 839px;
+  top: 824px;
+
+  background: #0e8750;
+  border-radius: 20px;
+}
+
+.redirectToLogin {
+  margin-left: 10rem;
+
+  text-align: center;
+}
+
+.faded {
+  background: #dedee9;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.containerRegister {
+  animation: slide-in 1500ms;
+}

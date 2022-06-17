@@ -1,0 +1,167 @@
+.modal {
+  min-width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+
+  position: fixed;
+  z-index: 3;
+  background: rgba(145, 154, 150, 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addClient {
+  height: 95%;
+  width: 60rem;
+  padding: 4rem 5.6rem;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.addClient::-webkit-scrollbar {
+  width: 8px;
+}
+
+div.addClient::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.flex-align {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.closeModal {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  cursor: pointer;
+}
+
+.addClient h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 3.4rem;
+  letter-spacing: 0em;
+  color: #343447;
+}
+
+.addClient label {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 0.6rem;
+  color: #344054;
+}
+
+.addClient input {
+  width: 100%;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.addClient input::placeholder {
+  width: 100%;
+  margin-bottom: 2rem;
+
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.addClient input.inputError {
+  border: 1px solid #E70000;
+}
+
+.addClient input.inputError:focus {
+  border: none;
+}
+
+.addClient span {
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #E70000;
+}
+
+.splitInputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.splitSide {
+  width: 47%;
+}
+
+.position--relative {
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 3.4rem;
+}
+
+.showPassword {
+  position: absolute;
+  top: 3.6rem;
+  right: 10px;
+  width: 2rem;
+  height: 1.8rem;
+}
+
+.buttonsForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.buttonsForm button {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+  text-align: center;
+
+  height: 3.3rem;
+  width: 21rem;
+  margin-top: 7rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttonCancel {
+  background-color: #DEDEE9;
+  color: #0E8750;
+}
+
+.buttonApply {
+  background-color: #DA0175;
+  color: #F8F8F9;
+}
