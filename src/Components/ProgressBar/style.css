@@ -1,45 +1,66 @@
-.root .MuiStepLabel-label {
+.root,
+.MuiStepLabel-label {
   color: #0e8750;
   font-size: 2rem;
 }
 
-.root .css-a5nipc {
+.root,
+.css-a5nipc {
   color: #0e8750;
 }
 
-.root .css-4ff9q7 .Mui-active {
+.root,
+.css-4ff9q7,
+.Mui-active {
   color: #0e8750;
 }
 
-.root .Mui-disabled .css-farnub {
+.root,
+.Mui-disabled,
+.css-farnub {
   font-size: 1.6rem;
 }
 
-.root .MuiTypography-body1 {
+.root,
+.MuiTypography-body1 {
   font-size: 1rem;
   font-weight: bold;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
-.root .Mui-active span,
-span.MuiStepLabel-labelContainer.css-16ubnlw-MuiStepLabel-labelContainer {
+.root,
+.Mui-active span,
+span.MuiStepLabel-labelContainer,
+.css-16ubnlw-MuiStepLabel-labelContainer {
   color: #0e8750;
 }
 
-.root
-  svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiStepIcon-root.Mui-active.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root,
-svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiStepIcon-root.Mui-completed.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root,
-span.MuiStepLabel-label.Mui-active.css-qivjh0-MuiStepLabel-label {
+.root,
+svg.MuiSvgIcon-root,
+.MuiSvgIcon-fontSizeMedium.MuiStepIcon-root,
+.Mui-active.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root,
+svg.MuiSvgIcon-root,
+.MuiSvgIcon-fontSizeMedium.MuiStepIcon-root,
+.Mui-completed,
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root span,
+.MuiStepLabel-label,
+.Mui-active.css-qivjh0-MuiStepLabel-label {
   color: #0e8750;
   font-size: 2rem;
 }
 
-.root span.MuiStepLabel-label.Mui-active.css-qivj0-MuiStepLabel-label {
+.root,
+.MuiStepLabel-label span,
+.Mui-active,
+.css-qivj0-MuiStepLabel-label {
   color: #0e8750;
   font-size: 1.6rem;
 }
 
-.root p.MuiTypography-root.MuiTypography-body1.css-ahj2mt-MuiTypography-root {
+.root,
+.MuiTypography-root p,
+.MuiTypography-body1,
+.css-ahj2mt-MuiTypography-root {
   font-size: 1.6rem;
 }
 
