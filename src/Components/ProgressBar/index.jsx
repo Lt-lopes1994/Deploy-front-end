@@ -30,12 +30,14 @@ export default function VerticalLinearStepper({ activeStep, setActiveStep }) {
   return (
     <div className="containerContent">
       <div className="contentLeft">
-        <Box sx={{ maxWidth: 400, color: "#0e8750" }}>
+        <Box sx={{ maxWidth: 400 }}>
           <Stepper activeStep={activeStep} orientation="vertical">
             {steps.map((step, index) => (
-              <Step sx={{ color: "#0e8750" }} key={step.label}>
-                <StepLabel>{step.label}</StepLabel>
-                <StepContent>
+              <Step key={step.label}>
+                <StepLabel sx={{ color: "rgb(14, 135, 80)" }}>
+                  {step.label}
+                </StepLabel>
+                <StepContent sx={{ color: "rgb(14, 135, 80)" }}>
                   <Typography>{step.description}</Typography>
                 </StepContent>
               </Step>

@@ -36,8 +36,9 @@
 
 ### Demonstração
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2dbf7a23-ccd5-4ed8-bd97-c8a7d0218f69/deploy-status)](https://app.netlify.com/sites/cobrebem/deploys)
-https://cobrebem.netlify.app/
+<div align="center" cursor="pointer">
+<a href="https://projeto-controle-clientes.vercel.app/">Link para testar a aplicação disponivel no site da Vercel.<a>
+</div>
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
