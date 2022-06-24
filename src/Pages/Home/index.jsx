@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import SideBar from "../../Components/SideBar";
-import Header from "../../Components/Header";
-import CardResume from "../../Components/CardResumeHomePage";
-import CardHome from "../../Components/CardHomePage";
 import CardClients from "../../Components/CardClientsHomePage";
-import TableHome from "../../Components/TableHome/index.jsx";
+import CardHome from "../../Components/CardHomePage";
+import CardResume from "../../Components/CardResumeHomePage";
+import Header from "../../Components/Header";
 import NotificationTable from "../../Components/NotificationTable";
-import { convertCentsToReal } from "../../Utils/convertCentsToReal";
+import SideBar from "../../Components/SideBar";
+import TableHome from "../../Components/TableHome/index.jsx";
+
 import api from "../../Services/api";
 import "./style.css";
 
@@ -27,46 +27,14 @@ export default function Home() {
     chargesAnticipated: 0,
   });
 
-  async function getDataPaidCharges() {
-    try {
-      const response = await api.get("/chargesPaid");
+  async function getTotalAmountCharges() {
+    const response = await api.get("/totalAmountAllCharges");
 
-      const convertedValue = convertCentsToReal(
-        response.data.total_amount_bills_paid
-      );
-
-      return convertedValue;
-    } catch (error) {
-      return null;
-    }
-  }
-
-  async function getDataOverdueCharges() {
-    try {
-      const response = await api.get("/overdueCharges");
-
-      const convertedValue = convertCentsToReal(
-        response.data.total_amount_overdue_charges
-      );
-
-      return convertedValue;
-    } catch (error) {
-      return null;
-    }
-  }
-
-  async function getDataAntecipatedCharges() {
-    try {
-      const response = await api.get("/anticipatedCharges");
-
-      const convertedValue = convertCentsToReal(
-        response.data.total_amount_expected_accounts
-      );
-
-      return convertedValue;
-    } catch (error) {
-      return null;
-    }
+    setBills({
+      chargesPaid: response.data.totalAmountBillsPaid,
+      chargesUnpaid: response.data.totalAmountExpectedAccounts,
+      chargesAnticipated: response.data.totalAmountOverdueCharges,
+    });
   }
 
   async function highlightsOverdueData() {
@@ -202,20 +170,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    (async () => {
-      const paidCharges = await getDataPaidCharges();
-
-      const overdueCharges = await getDataOverdueCharges();
-
-      const anticipatedCharges = await getDataAntecipatedCharges();
-
-      setBills({
-        chargesPaid: paidCharges,
-        chargesUnpaid: overdueCharges,
-        chargesAnticipated: anticipatedCharges,
-      });
-    })();
-
+    getTotalAmountCharges();
     allUpToDateCustomersData();
     allDeliquentCustomersData();
     allAnticipatedChargesData();
@@ -267,17 +222,17 @@ export default function Home() {
           <CardResume
             backGroundColor="#EEF6F6"
             status={0}
-            value={bills.chargesPaid}
+            value={bills.chargesUnpaid}
           />
           <CardResume
             backGroundColor="#FFEFEF"
             status={1}
-            value={bills.chargesUnpaid}
+            value={bills.chargesAnticipated}
           />
           <CardResume
             backGroundColor="#FCF6DC"
             status={2}
-            value={bills.chargesAnticipated}
+            value={bills.chargesPaid}
           />
 
           {highlightsOverdue.length > 0 && (
