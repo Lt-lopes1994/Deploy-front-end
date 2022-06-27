@@ -42,8 +42,8 @@ export default function InputPassword({
             {name} *
             <OutlinedInput
               id="outlined-adornment-password"
+              sx={{ height: "5rem", fontSize: "1.6rem" }}
               inputRef={{
-                fontSize: "1.6rem",
                 width: "34.4rem",
               }}
               type={values.showPassword ? "text" : "password"}
