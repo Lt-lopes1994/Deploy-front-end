@@ -5,8 +5,6 @@ import FormControl from "@mui/material/FormControl";
 import IconButton from "@mui/material/IconButton";
 import InputAdornment from "@mui/material/InputAdornment";
 import OutlinedInput from "@mui/material/OutlinedInput";
-import TextField from "@mui/material/TextField";
-import * as React from "react";
 import "./style.css";
 
 export default function InputPassword({
@@ -35,16 +33,19 @@ export default function InputPassword({
     <Box sx={{ display: "flex", flexWrap: "wrap" }}>
       <div>
         <FormControl
-          sx={{ m: 1, width: "34.4rem", fontSize: "2rem" }}
+          sx={{ m: 1, width: "34.4rem", fontSize: "caption" }}
           variant="outlined"
         >
           <label htmlFor="outlined-adornment-password">
             {name} *
             <OutlinedInput
               id="outlined-adornment-password"
-              sx={{ height: "5rem", fontSize: "1.6rem" }}
+              sx={{ height: "5rem", fontSize: "caption" }}
               inputRef={{
                 width: "34.4rem",
+                height: "5rem",
+                fontSize: "caption",
+                padding: "0.5rem",
               }}
               type={values.showPassword ? "text" : "password"}
               value={values.password}
