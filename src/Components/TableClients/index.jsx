@@ -16,7 +16,7 @@ import CreateChargeIcon from "../../Assets/icons/CreateChargeIcon.svg";
 import api from "../../Services/api";
 import "./style.css";
 
-async function loadClients() { }
+async function loadClients() {}
 
 function createData(name, cpf, email, cellphone, status, createCharge) {
   return {
@@ -262,12 +262,13 @@ export default function EnhancedTable() {
         return data.filter((client) => client.cpf.includes(query));
       } else {
         handleRequestSort(null, "name");
-        return data.filter((client) => client.name.toLowerCase().includes(query));
+        return data.filter((client) =>
+          client.name.toLowerCase().includes(query)
+        );
       }
     }
   };
   const rowsFiltered = filterData("", rows);
-
 
   // Avoid a layout jump when reaching the last page with empty rows.
   const emptyRows =

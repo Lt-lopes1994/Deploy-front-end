@@ -28,13 +28,13 @@ export default function Home() {
   });
 
   async function getTotalAmountCharges() {
-    const response = await api.get("/totalAmountAllCharges");
+    try {
+      const response = await api.get("/totalAmountAllCharges");
 
-    setBills({
-      chargesPaid: response.data.totalAmountBillsPaid,
-      chargesUnpaid: response.data.totalAmountExpectedAccounts,
-      chargesAnticipated: response.data.totalAmountOverdueCharges,
-    });
+      return response.data;
+    } catch (error) {
+      return null;
+    }
   }
 
   async function highlightsOverdueData() {
@@ -107,8 +107,6 @@ export default function Home() {
         Object.values(item)
       );
 
-      console.log(allAnticipatedCharges);
-
       setAllAnticipatedCharges(allAnticipatedCharges);
     } catch (error) {
       console.log(error.message);
@@ -152,14 +150,16 @@ export default function Home() {
       );
 
       setAllDeliquentCustomers(allDeliquentCustomers);
-    } catch (error) {}
+    } catch (error) {
+      console.log(error.message);
+    }
   }
 
   async function allUpToDateCustomersData() {
     try {
       const response = await api.get("/allCustomersUpToDate");
 
-      const allUpToDateCustomers = response.data.data.map((item) =>
+      const allUpToDateCustomers = response.data.map((item) =>
         Object.values(item)
       );
 
@@ -170,6 +170,18 @@ export default function Home() {
   }
 
   useEffect(() => {
+    (async () => {
+      const totalAmountCharges = await getTotalAmountCharges();
+
+      if (totalAmountCharges) {
+        setBills({
+          chargesPaid: totalAmountCharges.totalAmountBillsPaid,
+          chargesUnpaid: totalAmountCharges.totalAmountExpectedAccounts,
+          chargesAnticipated: totalAmountCharges.totalAmountOverdueCharges,
+        });
+      }
+    })();
+
     getTotalAmountCharges();
     allUpToDateCustomersData();
     allDeliquentCustomersData();
@@ -222,6 +234,11 @@ export default function Home() {
           <CardResume
             backGroundColor="#EEF6F6"
             status={0}
+            value={bills.chargesPaid}
+          />
+          <CardResume
+            backGroundColor="#FCF6DC"
+            status={2}
             value={bills.chargesUnpaid}
           />
           <CardResume
@@ -229,18 +246,13 @@ export default function Home() {
             status={1}
             value={bills.chargesAnticipated}
           />
-          <CardResume
-            backGroundColor="#FCF6DC"
-            status={2}
-            value={bills.chargesPaid}
-          />
 
-          {highlightsOverdue.length > 0 && (
-            <CardHome title="Cobranças Vencidas">
-              <NotificationTable config={notificantionsConfigs[0]} />
+          {highlightsPaid.length > 0 && (
+            <CardHome title="Cobranças Pagas">
+              <NotificationTable config={notificantionsConfigs[2]} />
               <TableHome
                 titles={["Cliente", "Id da cob.", "Valor"]}
-                dataTable={highlightsOverdue}
+                dataTable={highlightsPaid}
               />
             </CardHome>
           )}
@@ -255,12 +267,12 @@ export default function Home() {
             </CardHome>
           )}
 
-          {highlightsPaid.length > 0 && (
-            <CardHome title="Cobranças Pagas">
-              <NotificationTable config={notificantionsConfigs[2]} />
+          {highlightsOverdue.length > 0 && (
+            <CardHome title="Cobranças Vencidas">
+              <NotificationTable config={notificantionsConfigs[0]} />
               <TableHome
                 titles={["Cliente", "Id da cob.", "Valor"]}
-                dataTable={highlightsPaid}
+                dataTable={highlightsOverdue}
               />
             </CardHome>
           )}
