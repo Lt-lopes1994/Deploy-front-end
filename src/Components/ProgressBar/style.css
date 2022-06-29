@@ -1,67 +1,42 @@
-.root,
-.MuiStepLabel-label {
+span.MuiStepLabel-label.Mui-active.css-farnub {
   color: rgb(14, 135, 80);
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
-.root,
-.css-a5nipc {
-  color: #0e8750;
+p.MuiTypography-root.MuiTypography-body1.css-9l3uo3 {
+  color: rgb(14, 135, 80);
+  font-size: 1.5rem;
 }
 
-.root,
-.css-4ff9q7,
-.Mui-active {
-  color: #0e8750;
+span.MuiStepLabel-label.Mui-active.css-qivjh0-MuiStepLabel-label {
+  color: rgb(14, 135, 80);
+  font-size: 1.9rem;
 }
 
-.root,
-.Mui-disabled,
-.css-farnub {
-  font-size: 1.6rem;
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiStepIcon-root.Mui-active.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
+  color: rgb(14, 135, 80);
+  height: 3rem;
 }
 
-.root,
-.MuiTypography-body1 {
-  font-size: 1rem;
-  font-weight: bold;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+span.MuiStepLabel-label.Mui-disabled.css-qivjh0-MuiStepLabel-label {
+  color: rgb(14, 135, 80);
+  font-size: 1.9rem;
 }
 
-.root,
+text.MuiStepIcon-text.css-117w1su-MuiStepIcon-text {
+  color: rgb(14, 135, 80);
+}
+
+p.MuiTypography-root.MuiTypography-body1.css-ahj2mt-MuiTypography-root {
+  color: rgb(14, 135, 80);
+  font-size: 1.2rem;
+}
+
 .Mui-active span,
-span.MuiStepLabel-labelContainer,
-.css-16ubnlw-MuiStepLabel-labelContainer {
-  color: #0e8750;
-}
-
+.css-16ubnlw-MuiStepLabel-labelContainer,
 .root,
-svg.MuiSvgIcon-root,
-.MuiSvgIcon-fontSizeMedium.MuiStepIcon-root,
-.Mui-active.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root,
-svg.MuiSvgIcon-root,
-.MuiSvgIcon-fontSizeMedium.MuiStepIcon-root,
-.Mui-completed,
-.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root span,
-.MuiStepLabel-label,
-.Mui-active.css-qivjh0-MuiStepLabel-label {
-  color: #0e8750;
-  font-size: 2rem;
-}
-
-.root,
-.MuiStepLabel-label span,
-.Mui-active,
-.css-qivj0-MuiStepLabel-label {
-  color: #0e8750;
-  font-size: 1.6rem;
-}
-
-.root,
-.MuiTypography-root p,
-.MuiTypography-body1,
-.css-ahj2mt-MuiTypography-root {
-  font-size: 1.6rem;
+span.MuiStepLabel-labelContainer {
+  color: rgb(14, 135, 80);
 }
 
 .containerContent {
