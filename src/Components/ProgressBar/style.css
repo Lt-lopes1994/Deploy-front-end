@@ -8,6 +8,12 @@ p.MuiTypography-root.MuiTypography-body1.css-9l3uo3 {
   font-size: 1.5rem;
 }
 
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiStepIcon-root.Mui-active.css-4ff9q7,
+span.MuiStepLabel-iconContainer.css-a5nipc {
+  color: rgb(14, 135, 80);
+  height: 3rem;
+}
+
 span.MuiStepLabel-label.Mui-active.css-qivjh0-MuiStepLabel-label {
   color: rgb(14, 135, 80);
   font-size: 1.9rem;
