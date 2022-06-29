@@ -13,6 +13,8 @@ export default function TableHome({ titles, dataTable }) {
     return { client, specifications, value };
   }
 
+  console.log(dataTable);
+
   const rows = [];
   dataTable.map((data) => {
     return rows.push(createData(...data));
